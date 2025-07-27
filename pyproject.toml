@@ -9,8 +9,8 @@ requires-python = ">=3.9, <4.0"
 adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
 ]
-plugins = []
-plugin_dirs = ["nonebot_plugin_drop/plugins"]
+plugins = ["nonebot_plugin_drop"]
+plugin_dirs = []
 builtin_plugins = []
 
 [tool.poetry]
@@ -25,8 +25,3 @@ python = "^3.11"
 nonebot-plugin-alconna = "^0.59.1"
 nonebot-plugin-uninfo = "^0.8.2"
 nonebot-plugin-localstore = "^0.7.4"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
